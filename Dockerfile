@@ -39,6 +39,7 @@ libpng-devel \
 libjpeg-devel \
 freetype-devel \
 libmcrypt-devel \
+gmp-devel \
 #oniguruma \
 openssh-server && \
 #
@@ -91,6 +92,7 @@ cd /home/nginx-php/php-$PHP_VERSION && \
 --with-curl \
 --with-xmlrpc \
 --with-mhash \
+--with-gmp \
 --enable-fpm \
 --enable-xml \
 --enable-shmop \
@@ -108,6 +110,7 @@ cd /home/nginx-php/php-$PHP_VERSION && \
 --enable-bcmath \
 --enable-exif \
 --enable-fileinfo \
+--enable-gmp \
 --disable-rpath \
 --enable-ipv6 \
 --disable-debug \
